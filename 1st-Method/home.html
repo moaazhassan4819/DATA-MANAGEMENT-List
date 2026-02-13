@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Management List</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h2>Profit / Loss Calculator</h2>
+
+    <form onsubmit="calculate(); return false">
+        <label for="">
+      Item Name: <input type="text" id="itemName" placeholder="Enter Item Name"><br><br>
+        </label>
+
+        <label for="">
+           Expense: <input type="number" id="expense" placeholder="Enter Expense" required><br><br>
+        </label>
+
+        <label for="">
+            Sale: <input type="number" id="sale" placeholder="Enter Sale Price" required><br><br>
+        </label>
+
+        <button type="submit">Check Profit / Loss</button>
+        <h3 id="result"></h3>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #2D2D2D;
+}
+
+.data{
+    margin: 50px 100px;
+    text-decoration: underline;
+    font-size: 40px;
+    word-spacing: 40%;
+    color: rgba(172, 108, 255, 1);  
+}
+
+form{
+    margin: 50px 100px 50px 50px;
+}
+
+form label{
+    font-size: 26px;
+    font-weight: 700;
+    padding-left: 50px;
+    color: rgba(172, 108, 255, 1);
+}
+
+ form label input{
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+}
+
+form button{
+    font-size: 22px;
+    padding: 5px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-left: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    background-color: rgba(172, 108, 255, 1);
+    color: white;
+}
+
+form button:hover{
+    color: rgba(172, 108, 255, 1);
+    background-color: white;
+    border: 2px solid rgba(172, 108, 255, 1);
+}
+
+table{
+    margin: 50px 100px;
+    border: 1px solid black;
+    border-spacing: 10px;
+}
+
+table tbody tr td{
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    font-size: 22px;
+}
+
+table thead tr th{
+    color: white;
+    background-color: rgba(172, 108, 255, 1);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 22px;
+}
+
+table #tbody tr td button{
+    background-color: rgba(172, 108, 255, 1);
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+table #tbody tr td{
+    color: white;
+    background-color: rgba(172, 108, 255, 1);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 22px;
+}
+
+table #tbody tr .number{
+    text-align: center;
+}
+
+table #tbody tr .profit{
+    background-color: rgb(88, 199, 88);
+}
+
+table #tbody tr .loss{
+    background-color: brown;
+}
+
+@media (max-width: 1660px) {
+    form button {
+        margin-top: 50px;
+    }
+    form label {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1199px) {
+    form label {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 991px) {
+    .data {
+        margin: 20px 100px;
+        text-decoration: underline;
+        font-size: 32px;
+    }
+}
