@@ -1,109 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        background-color: #2d2d2d;
+      }
+
+      h1 {
+        color: rgba(172, 108, 255, 1);
+        margin: 50px 150px;
+        font-size: 40px;
+        text-decoration: underline;
+      }
+
+      .links {
+        margin: 70px 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+      }
+
+      a {
+        width: 350px;
+        text-align: center;
+        font-size: 34px;
+        padding: 5px 10px;
+        font-weight: 600;
+        line-height: 40px;
+        border: 2px solid transparent;
+        background-color: rgba(172, 108, 255, 1);
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out;
+      }
+
+      a:hover {
+        background-color: #2d2d2d;
+        border: 2px solid rgba(172, 108, 255, 1);
+        color: rgba(172, 108, 255, 1);
+      }
+
+      @media (max-width: 991px) {
+        h1 {
+          font-size: 36px;
         }
 
-        body{
-            background-color: #2D2D2D;
-        }
-
-        h1{
-            color: rgba(172, 108, 255, 1);
-            margin: 50px 150px;
-            font-size: 40px;
-            text-decoration: underline;
-        }
-
-        .links{
-            margin: 70px 300px;
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-        }
-
-        a{
-            width: 350px;
-            text-align: center;
-            font-size: 34px;
-            padding: 5px 10px;
-            font-weight: 600;
-            line-height: 40px;
-            border: 2px solid transparent;
-            background-color: rgba(172, 108, 255, 1);
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: all 0.5s ease-in-out;
-        }
-
-        a:hover{
-            background-color: #2D2D2D;
-            border: 2px solid rgba(172, 108, 255, 1);
-            color: rgba(172, 108, 255, 1);
-        }
-
-        @media (max-width: 991px) {
-            h1{
-                font-size: 36px;
-            }
-            
         .links {
-            margin: 70px 160px;
+          margin: 70px 160px;
         }
         a {
-            width: 310px;
-            text-align: center;
-            font-size: 30px;
-        }h1 {
-            font-size: 30px;
-            margin: 50px 100px;
+          width: 310px;
+          text-align: center;
+          font-size: 30px;
         }
-        a{
-            font-size: 24px;
-            line-height: 30px;
-            width: 250px;
-        }
-        }
-
-        @media (max-width: 575px) {
-            h1 {
-                font-size: 26px;
-                margin: 40px 30px;
-            }
-            .links {
-                margin: 70px 60px;
-            }
-        }
-        @media (max-width: 320px) {
-        .links {
-              margin: 70px 34px;
+        h1 {
+          font-size: 30px;
+          margin: 50px 100px;
         }
         a {
-            font-size: 22px;
-            line-height: 30px;
-            width: 220px;
+          font-size: 24px;
+          line-height: 30px;
+          width: 250px;
         }
-        }
+      }
 
+      @media (max-width: 575px) {
+        h1 {
+          font-size: 26px;
+          margin: 40px 30px;
+        }
+        .links {
+          margin: 70px 60px;
+        }
+      }
+      @media (max-width: 320px) {
+        .links {
+          margin: 70px 34px;
+        }
+        a {
+          font-size: 22px;
+          line-height: 30px;
+          width: 220px;
+        }
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <h1>Data Management List</h1>
 
     <div class="links">
-        <a href="1st-Method/home.html">Go to 1st Method</a>
-        <a href="2nd-Method/index.html">Go to 2nd Method</a>
+      <a href="1st-Method/home.html">Go to 1st Method</a>
+      <a href="2nd-Method/index.html">Go to 2nd Method</a>
+      <a href="local-storage/index.html"
+        >Go to 3rd Method <br />
+        Using local-storage</a
+      >
     </div>
-
-</body>
+  </body>
 </html>

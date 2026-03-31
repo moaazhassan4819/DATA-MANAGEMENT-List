@@ -1,47 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Management List</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1 class="data">DATA MANAGEMENT</h1>
-    <form onsubmit="dataManagement(); return false">
-        <label for="">
-            Item: <input type="text" id="item">
-        </label>
+    <form
+      onsubmit="
+        dataManagement();
+        return false;
+      "
+    >
+      <label for=""> Item: <input type="text" id="item" /> </label>
 
-        <label for="">
-            Expense: <input type="text" id="expense" required>
-        </label>
+      <label for="">
+        Expense: <input type="number" id="expense" required />
+      </label>
 
-        <label for="">
-            Sell: <input type="text" id="sell" required>
-        </label>
-        <button type="submit">Enter</button>
+      <label for=""> Sell: <input type="number" id="sell" required /> </label>
+      <button type="submit">Enter</button>
     </form>
     <table>
-        <thead>
-            <tr>
-                <th>S.No</th>
-                <th>Item</th>
-                <th>Expense</th>
-                <th>Selling</th>
-                <th>Profit</th>
-                <th>Loss</th>
-                <th></th>
-            </tr>
-        </thead>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Item</th>
+          <th>Expense</th>
+          <th>Selling</th>
+          <th>Profit</th>
+          <th>Loss</th>
+          <th></th>
+        </tr>
+      </thead>
 
-        <tbody id="tbody">
-            
-        </tbody>
+      <tbody id="tbody"></tbody>
     </table>
 
-
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
